@@ -252,6 +252,14 @@ footer {
     font-weight: 600;
     margin-bottom: 0.5em;
   }
+  p {
+    color: #475467;
+  }
+  li {
+    color: #475467;
+    font-size: 16px;
+    margin-left: 0.5em;
+  }
 }
 
 .navbar-toggler {
