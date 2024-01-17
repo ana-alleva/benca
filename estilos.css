@@ -72,7 +72,7 @@ h2 {
 /* NavBar */
 
 .navbar {
-  padding: 16px 4em;
+  padding: 16px 4em !important;
 }
 
 @media (min-width: 768px) {
@@ -257,4 +257,8 @@ footer {
 .navbar-toggler {
   border: 1px solid white !important;
   background: white;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0;
 }
