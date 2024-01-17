@@ -11,14 +11,504 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Somos Benca</title>
   </head>
   <body>
-    <header>Header</header>
-    <main>Cuerpo</main>
-    <footer>Footer</footer>
-  </body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg primary-bg-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active"
+                  aria-current="page"
+                  href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Quienes Somos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-light dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Logística</a></li>
+                  <li><a class="dropdown-item" href="#">Almacenamiento</a></li>
+                  <li><a class="dropdown-item" href="#">Transporte</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Gestión de Mantenimiento</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Equipamiento y Tecnología</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary">Contactanos</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="hero container-fluid primary-bg-color p-5">
+        <div class="row">
+          <h1 class="text-light mb-4">Eficiencia en Cada Proceso, Siempre.</h1>
+        </div>
+        <div class="row mb-3">
+          <p class="bajada text-light">
+            — Transformamos y optimizamos procesos logísticos y de
+            mantenimiento. <br />
+            Expertos en diseño, montaje y ejecución de operaciones. <br />
+            Nos enfocamos en la mejora continua y el bienestar organizacional.
+          </p>
+        </div>
+        <div class="row g-3">
+          <div class="col-auto">
+            <button type="button" class="btn btn-secondary">Contactanos</button>
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary">Contactanos</button>
+          </div>
+        </div>
+      </div>
+      <!-- Inicio Clientes -->
+      <div class="clients container-fluid secondary-bg-color p-5">
+        <div class="row mb-4">
+          <div class="col">
+            <h6 class="text-light text-center">
+              Algunas de las empresas que trabajaron con nosotros
+            </h6>
+          </div>
+        </div>
+        <div class="row clients-logos g-2 d-none d-md-flex">
+          <div class="col-md-3 d-flex justify-content-center">
+            <img
+              style="height: 70px"
+              src="./img/cliente-logo-01.png"
+              class="d-block w-30"
+              alt="cliente"
+            />
+          </div>
+          <div class="col-md-3 d-flex justify-content-center">
+            <img
+              style="height: 70px"
+              src="./img/cliente-logo-02.png"
+              class="d-block w-30"
+              alt="cliente"
+            />
+          </div>
+          <div class="col-md-3 d-flex justify-content-center">
+            <img
+              style="height: 70px"
+              src="./img/cliente-logo-03.png"
+              class="d-block w-30"
+              alt="cliente"
+            />
+          </div>
+          <div class="col-md-3 d-flex justify-content-center">
+            <img
+              style="height: 70px"
+              src="./img/cliente-logo-04.png"
+              class="d-block w-30"
+              alt="cliente"
+            />
+          </div>
+        </div>
 
+        <!-- Carrusel para pantallas pequeñas (sm) -->
+        <div
+          id="clientCarousel"
+          class="carousel slide d-md-none"
+          data-bs-ride="carousel"
+          mt-3
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block mx-auto"
+                style="height: 70px"
+                src="./img/cliente-logo-01.png"
+                alt="Cliente 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block mx-auto"
+                style="height: 70px"
+                src="./img/cliente-logo-02.png"
+                alt="Cliente 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block mx-auto"
+                style="height: 70px"
+                src="./img/cliente-logo-03.png"
+                alt="Cliente 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block mx-auto"
+                style="height: 70px"
+                src="./img/cliente-logo-04.png"
+                alt="Cliente 4"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Fin Carrousel -->
+      </div>
+      <div class="about container-fluid p-5">
+        <div class="mb-4">
+          <div class="row">
+            <div class="col">
+              <p class="h7 font-color-primary">Sobre Nosotros</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2>Somos Benca</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>
+                Somos una empresa de consultoría en reingeniería y optimización
+                de procesos logísticos y de mantenimiento. <br /> Nos especializamos en
+                la gestión proyectos de diseño, montaje y ejecución de
+                operaciones logísticas y mantenimiento.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Comienzo Row 1 Cajas de Beneficios -->
+        <div class="row mt-2 mb-2">
+          <div class="contenedor-beneficio col-md">
+            <div class="container">
+              <div class="row g-2">
+                <!-- Icono arriba a la izquierda en dispositivos de tamaño medio (md) -->
+                <div class="col-12 col-md-2 text-md-center p-0 order-md-first">
+                  <img src="./img/ic-rayo.svg" alt="icono" />
+                </div>
+                <div class="col-12 col-md-10">
+                  <h6 class="mt-3">Brindamos soluciones</h6>
+                  <p class="font-size-small">
+                    Enfocados principalmente en brindar las mejores soluciones a
+                    empresas que necesiten colaboración externa para llevar a
+                    cabo sus proyectos logísticos o procesos de reingeniería.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contenedor-beneficio col-md">
+            <div class="container">
+              <div class="row g-2">
+                <!-- Icono arriba a la izquierda en dispositivos de tamaño medio (md) -->
+                <div class="col-12 col-md-2 text-md-center p-0 order-md-first">
+                  <img src="./img/ic-corazon.svg" alt="icono" />
+                </div>
+                <div class="col-12 col-md-10">
+                  <h6 class="mt-3">Nuestra Pasión</h6>
+                  <p class="font-size-small">
+                    Implementar soluciones, por eso nos involucramos para que
+                    las cosas pasen, escuchamos, analizamos y entendemos las
+                    necesidades de nuestros clientes antes de actuar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Comienzo Row 2 Cajas de Beneficios -->
+        <div class="row mt-2 mb-2">
+          <div class="contenedor-beneficio col-md">
+            <div class="container">
+              <div class="row g-2">
+                <!-- Icono arriba a la izquierda en dispositivos de tamaño medio (md) -->
+                <div class="col-12 col-md-2 text-md-center p-0 order-md-first">
+                  <img src="./img/ic-estrella.svg" alt="icono" />
+                </div>
+                <div class="col-12 col-md-10">
+                  <h6 class="mt-3">Nuestro Objetivo</h6>
+                  <p class="font-size-small">
+                    Nuestro objetivo principal es contribuir a mejorar procesos,
+                    resultados, y el bienestar de las personas dentro de las
+                    organizaciones.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contenedor-beneficio col-md">
+            <div class="container">
+              <div class="row g-2">
+                <!-- Icono arriba a la izquierda en dispositivos de tamaño medio (md) -->
+                <div class="col-12 col-md-2 text-md-center p-0 order-md-first">
+                  <img src="./img/ic-rayo.svg" alt="icono" />
+                </div>
+                <div class="col-12 col-md-10">
+                  <h6 class="mt-3">Más de 15 años de Experiencia</h6>
+                  <p class="font-size-small">
+                    Estés donde estés y sea cual sea tu negocio, nuestros más de
+                    15 años de experiencia y éxito en el sector privado, nos
+                    ayudarán a que pensemos en conjunto la reingeniería de tu
+                    empresa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECCION SERVICIOS -->
+      <div class="services bg-white py-5">
+        <div class="container">
+          <!-- Titulo y Texto -->
+          <div class="row text-center mb-5">
+            <div class="col">
+              <h2 class="section-heading">Nuestros Servicios</h2>
+              <p class="text-muted">Nuestra amplia experiencia nos permite trabajar sobre gran parte del campo de la logística y el mantenimiento, <br /> sumando nuestros partners aliados en sistemas y RRHH para dar una solución integral.</p>
+            </div>
+          </div>
+      
+          <!-- Columna del Servicio de Logística -->
+          <div style="border: 1px solid red" class="my-5 row">
+            <div class="col-md-6 mb-4">
+              <div class="service-item">
+                <img class="mb-2" src="./img/circular-icon-01.svg" />
+                <h3>Logística de Almacenamiento</h3>
+                <p>Es esencial para eficiencia, involucrando automatización y ahorro de tiempo y recursos. Mejora la gestión, la comunicación y la satisfacción del cliente.</p>
+                <br />
+                <ul class="list-unstyled">
+                  <li class="mb-3"><img class="mr-3" src="./img/bullet.png" /> Diseñamos tu almacén o centro de distribución.</li>
+                  <li class="mb-3"><img class="mr-3" src="./img/bullet.png" /> Implementamos sistemas de gestión de stocks.</li>
+                  <li class="mb-3"><img class="mr-3" src="./img/bullet.png" /> Analizamos y desarrollamos los flujos de recepción, almacenamiento, preparación y despacho.</li>
+                  <li class="mb-3"><img class="mr-3" src="./img/bullet.png" /> Reducimos tus costos.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Columna de Imagen -->
+            <div class="col-md-6 mb-4">
+              <img src="./img/img-logistica.png" class="img-fluid rounded" alt="Imagen de Servicio" class="img-fluid">
+            </div>
+          </div>
+          
+          <!-- Columna del Servicio de Distribucion y transporte -->
+          <div class="my-5 row">
+          <!-- Columna de Imagen -->
+            <div class="col-md-6 mb-4">
+              <img src="./img/img-transporte.png" class="img-fluid rounded" alt="Imagen de Servicio" class="img-fluid">
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="service-item">
+                <div style="width: 100%; text-align: right;"><img class="mb-2" src="./img/circular-icono-02.svg" /></div>
+                <h3 style="text-align: right">Logística de Almacenamiento</h3>
+                <p style="text-align: right">Es esencial para eficiencia, involucrando automatización y ahorro de tiempo y recursos. Mejora la gestión, la comunicación y la satisfacción del cliente.</p>
+                <br />
+                <ul style="text-align: right;" class="list-unstyled">
+                  <li class="mb-3">Diseñamos tu almacén o centro de distribución. <img class="ml-3" src="./img/bullet.png" /></li>
+                  <li class="mb-3">Diseñamos tu almacén o centro de distribución. <img class="ml-3" src="./img/bullet.png" /></li>
+                  <li class="mb-3">Diseñamos tu almacén o centro de distribución. <img class="ml-3" src="./img/bullet.png" /></li>
+                  <li class="mb-3">Diseñamos tu almacén o centro de distribución. <img class="ml-3" src="./img/bullet.png" /></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <!-- FIN SECCION SERVICIOS -->
+      <div class="statistics">
+        <!-- Inicio Estadisticas -->
+        <div class="statistics container-fluid" style="background-color: #F9FAFB; color: #101828; padding: 5rem;">
+          <div class="row mb-4">
+            <div class="col">
+              <h6 class="text-center" style="color: #101828;">
+                Estadisticas de Optimización
+              </h6>
+            </div>
+          </div>
+          <!-- Contenedor del fondo y color del texto -->
+          <div class="row g-2 d-none d-md-flex">
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="contenedor-estadisticas d-block w-100 text-center">
+                <h3>150+</h3>
+                <p>Clientes</p>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="contenedor-estadisticas d-block w-100 text-center">
+                <h3>100+</h3>
+                <p>Proyectos</p>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="contenedor-estadisticas d-block w-100 text-center">
+                <h3>30%</h3>
+                <p>Ahorro en optimización</p>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="contenedor-estadisticas d-block w-100 text-center">
+                <h3>60%</h3>
+                <p>Depósitos Diseñados</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carrusel para pantallas pequeñas (sm) -->
+          <div id="clientCarousel" class="carousel slide d-md-none mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <div class="contenedor-estadisticas d-block mx-auto">
+                  <h3>150+</h3>
+                  <p>Clientes</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="contenedor-estadisticas d-block mx-auto">
+                  <h3>100+</h3>
+                  <p>Proyectos</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="contenedor-estadisticas d-block mx-auto">
+                  <h3>30%</h3>
+                  <p>Ahorro en optimización</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="contenedor-estadisticas d-block mx-auto">
+                  <h3>30%</h3>
+                  <p>Ahorro en optimización</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+        <div class="contact container my-5">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>Conversemos</h2>
+              <p>Contáctanos para Potenciar tus Operaciones.</p>
+            </div>
+          </div>
+          <!-- Comienzo del Form -->
+          <div class="row justify-content-center">
+            <div>
+              <form class="form-inline" style="max-width: 480px; margin: auto;">
+                <div class="form-row w-100">
+                  <div class="form-group ">
+                    <label for="inputNombre">Nombre</label>
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" style="width: 100%;">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputApellido">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" style="width: 100%;">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group ">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" style="width: 100%;">
+                  </div>
+                  <div class="form-group ">
+                    <label for="inputTelefono">Teléfono</label>
+                      <input type="text" class="form-control" id="inputTelefono" placeholder="Teléfono" style="width: 100%;">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputConsulta">Consulta</label>
+                  <textarea class="form-control" id="inputConsulta" rows="3" placeholder="Escribe tu consulta..." style="width: 100%;"></textarea>
+                </div>
+                <button type="submit" class="mt-3 btn btn-primary" style="width: 100%;">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <!-- Fin del Form -->
+        </div>
+    </main>
+    <footer style="background-color: #101828; color: #ffffff;">
+      <div class="container p-4">
+        <div class="row my-4">
+          <div class="col">
+            <!-- Logo -->
+            <img src="./img/logo.svg" alt="Logo" style="max-width: 100px;">
+          </div>
+        </div>
+        <div class="news">
+          <div class="row">
+            <!-- Primera Columna -->
+            <div class="col-md-6 my-4">
+              <a href="#" class="text-white">Inicio</a>
+              <a href="#" class="text-white">Quienes Somos</a>
+              <a href="#" class="text-white">Nuestros Servicios</a>
+            </div>
+            
+            <!-- Segunda Columna -->
+            <div class="col-md-6 my-4">
+              <form class="d-flex gap-3">
+                <input type="text" placeholder="Ingrese texto aquí" class="form-control">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Línea divisoria -->
+        <hr style="border-color: #667085;">
+        <div class="row">
+          <div class="col">
+            <!-- Texto de derechos de autor -->
+            <p class="small" style="color: #667085;">© 2024 Benca | Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
