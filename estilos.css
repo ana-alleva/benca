@@ -75,6 +75,31 @@ h2 {
   padding: 16px 4em;
 }
 
+@media (min-width: 768px) {
+  .navbar {
+    padding: 16px 2em;
+  }
+  .hero-title {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+}
+
+@media (min-width: 400px) {
+  .hero-title {
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+  }
+  footer {
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+  }
+  #formularioContacto {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+}
+
 .nav-link:hover {
   background-color: #272a7b;
   border-radius: 8px;
