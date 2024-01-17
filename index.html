@@ -17,6 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Agrega el favicon -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Somos Benca</title>
   </head>
   <body>
@@ -62,15 +65,15 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#logistica">Logística</a></li>
-                  <li><a class="dropdown-item" href="#">Almacenamiento</a></li>
-                  <li><a class="dropdown-item" href="#">Transporte</a></li>
+                  <li><a class="dropdown-item" href="#almacenamiento">Almacenamiento</a></li>
+                  <li><a class="dropdown-item" href="#distribucionTransporte">Transporte</a></li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#gestionMantenimiento"
                       >Gestión de Mantenimiento</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#equipamientoTecnologia"
                       >Equipamiento y Tecnología</a
                     >
                   </li>
@@ -95,7 +98,7 @@
             Nos enfocamos en la mejora continua y el bienestar organizacional.
           </p>
         </div>
-        <div class="row g-3">
+        <div class="row g-3 mb-5">
           <div class="col-auto">
             <a href="#formularioContacto" type="button" class="btn btn-secondary">Contactanos</a>
           </div>
@@ -105,7 +108,13 @@
           </div>
         -->
         </div>
-      </div>
+          <div class="row text-center my-5 col-12 d-md-block d-lg-none">
+            <div>
+              <div class="overflow-hidden">
+                <img class="rounded" src="./img/main-hero.png" alt="almacenamiento" class="img-fluid">
+              </div>
+            </div>
+          </div>
       <!-- Inicio Clientes -->
       <div class="clients container-fluid secondary-bg-color p-5">
         <div class="row mb-4">
@@ -313,7 +322,7 @@
           </div>
       
           <!-- Columna del Servicio de Logística -->
-          <div id="logistica" class="my-5 row">
+          <div id="almacenamiento" class="my-5 row">
             <div class="col-md-6 mb-4">
               <div class="service-item">
                 <img class="mb-2" src="./img/circular-icon-01.svg" />
@@ -335,7 +344,7 @@
           </div>
           
           <!-- Columna del Servicio de Distribucion y transporte -->
-          <div class="my-5 row">
+          <div id="distribucionTransporte" class="my-5 row">
           <!-- Columna de Imagen -->
             <div class="col-md-6 mb-4">
               <img src="./img/img-transporte.png" class="img-fluid rounded" alt="Imagen de Servicio" class="img-fluid">
@@ -356,8 +365,8 @@
             </div>
           </div>
 
-          <!-- Columna de Gestión del Mantenimiento industrial y de transporte -->
-          <div class="my-5 row">
+          <!-- Columna de Gestión del Mantenimiento industrial y de transporte -->
+          <div id="gestionMantenimiento" class="my-5 row">
             <div class="col-md-6 mb-4">
               <div class="service-item">
                 <img class="mb-2" src="./img/circular-icon-03.svg" />
@@ -379,7 +388,7 @@
           </div>
           
           <!-- Columna del Servicio de Equipamiento y tecnología -->
-          <div class="my-5 row">
+          <div id="equipamientoTecnologia" class="my-5 row">
           <!-- Columna de Imagen -->
             <div class="col-md-6 mb-4">
               <img src="./img/img-transporte.png" class="img-fluid rounded" alt="Imagen de Servicio" class="img-fluid">
