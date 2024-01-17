@@ -91,6 +91,7 @@ h2 {
 
 .about {
   background: #f9fafb !important;
+
   h6 {
     font-size: 20px;
     font-style: normal;
@@ -124,6 +125,7 @@ h2 {
   font-style: normal;
   font-weight: 600;
   line-height: 44px; /* 122.222% */
+  background: white;
 }
 
 .contenedor-estadisticas {
